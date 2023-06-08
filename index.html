@@ -66,50 +66,11 @@
       overflow: hidden;
       animation: typing 5s steps(40, end);
     }
-
-    @keyframes typing {
-      from { width: 0; }
-      to { width: 100%; }
-    }
   </style>
 </head>
 <body>
-  <script>
-    var isAnimationRunning = false; // Animasyonun çalışma durumunu tutan değişken
-
-    function TCPP() {
-      if (isAnimationRunning) {
-        return; // Eğer animasyon zaten çalışıyorsa, fonksiyondan çık
-      }
-
-      isAnimationRunning = true; // Animasyonu başlat
-
-      var element = document.getElementById("progress-Text1");
-      var progressText1 = element.innerHTML; // Mevcut biyografi metnini alır
-      element.innerHTML = ""; // İçeriği temizler
-
-      var currentIndex = 0; // Mevcut yazının indeksi
-      var speed = 50; // Yazma hızı (milisaniye cinsinden)
-
-      function typeCharacter() {
-        if (currentIndex < progressText1.length) {
-          element.innerHTML += progressText1.charAt(currentIndex);
-          currentIndex++;
-          setTimeout(typeCharacter, speed);
-        } else {
-          isAnimationRunning = false; // Animasyonu durdur
-        }
-      }
-
-      typeCharacter();
-    }
-
-    var button = document.getElementById("start-animation-button"); // Butonun HTML elementini seçin
-    button.addEventListener("click", TCPP); // Butona tıklandığında animasyonu başlat
-  </script>
-
   <div id="header">
-    <h1 id="progress-Text1">Qu</h1>
+    <h1>Qu</h1>
   </div>
   
   <div id="nav">
@@ -125,8 +86,8 @@
   
   <div id="content">
     <div class="box" id="anasayfa">
-      <h3 id="progress-Text1">Hoş geldiniz!</h3>
-      <p id="progress-Text1">Qu'nin sitesine hoş geldiniz!</p>
+      <h3>Hoş geldiniz!</h3>
+      <p>Qu'nin sitesine hoş geldiniz!</p>
     </div>
     <!--
     <div class="box" id="hakkimizda">
@@ -145,7 +106,7 @@
 -->
     
     <div class="box" id="iletisim">
-      <h3 id="progress-Text1">İletişim</h3>
+      <h3>İletişim</h3>
       <form>
         <label for="name">Adınız:</label>
         <input type="text" id="name" name="name"><br><br>
