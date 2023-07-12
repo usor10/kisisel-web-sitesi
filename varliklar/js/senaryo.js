@@ -13,3 +13,18 @@ document.onkeydown = function(e) {
     }
   }
 };
+
+const express = require('express');
+const app = express();
+
+app.get('/', (req, res) => {
+  res.send('Ana sayfa');
+});
+
+app.use((req, res) => {
+  res.status(404).send('Error: Cannot get ' + req.originalUrl);
+});
+
+const server = app.listen(3000, () => {
+  console.log('Sunucu 3000 portunda çalışıyor');
+});
