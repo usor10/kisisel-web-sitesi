@@ -81,12 +81,3 @@ pre {
     color: white;
     font-size: 24px;
 }
-
-#kapatButton {
-    padding: 10px 20px;
-    background-color: #333;
-    color: white;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-}
