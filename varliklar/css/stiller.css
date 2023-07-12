@@ -65,3 +65,9 @@ pre {
     white-space: pre;
     margin: 1em 0px;
 }
+
+#game-container {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+}
