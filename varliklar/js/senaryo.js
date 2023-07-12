@@ -13,4 +13,9 @@ document.onkeydown = function(e) {
       var modelEkran = document.getElementById("modelEkran");
       modelEkran.style.display = "flex";
     }
-  };
+};
+
+document.getElementById("kapatButton").onclick = function() {
+    var modelEkran = document.getElementById("modelEkran");
+    modelEkran.style.display = "none";
+};
